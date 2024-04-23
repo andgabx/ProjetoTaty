@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spaghetti Carbonara</title>
+    <link rel="stylesheet" href="/Projeto/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Projeto/index.html">Receitas by Gab</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-3 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Carnes
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/Projeto/recipes/costela.html">Costela no Bafo</a></li>
+                            <li><a class="dropdown-item" href="/Projeto/recipes/picanhaforno.html">Picanha no forno</a></li>
+                            <li><a class="dropdown-item" href="/Projeto/recipes/ossobuco.html">Ossobuco</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Aves
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/Projeto/recipes/frangoassado.html">Frango Assado</a></li>
+                            <li><a class="dropdown-item" href="/Projeto/recipes/chester.html">Chester</a></li>
+                            <li><a class="dropdown-item" href="/Projeto/recipes/codorna.html">Codorna Recheada</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Peixes
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/Projeto/recipes/salmao.html">Salmão Grelhado</a></li>
+                            <li><a class="dropdown-item" href="/Projeto/recipes/bacalhau.html">Bacalhau ao forno</a></li>
+                            <li><a class="dropdown-item" href="/Projeto/recipes/atum.html">Atum Selado</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Saladas
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/Projeto/recipes/saladacesar.html">Salada Ceasar</a></li>
+                            <li><a class="dropdown-item" href="/Projeto/recipes/saladagrega.html">Salada Grega</a></li>
+                            <li><a class="dropdown-item" href="/Projeto/recipes/saladabatata.html">Salada de Batata</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Massas
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/Projeto/recipes/lasanha.html">Lasanha à Bolonhesa</a></li>
+                            <li><a class="dropdown-item" href="/Projeto/recipes/carbonara.html">Spaghetti Carbonara</a></li>
+                            <li><a class="dropdown-item" href="/Projeto/recipes/ravioli.html">Ravioli de Portobello</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Sobremesas
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/Projeto/recipes/pudimleite.html">Pudim de Leite</a></li>
+                            <li><a class="dropdown-item" href="/Projeto/recipes/tortalimao.html">Torta de Limão</a></li>
+                            <li><a class="dropdown-item" href="/Projeto/recipes/moussechocolate.html">Mousse de Chocolate</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Pesquise aqui!" aria-label="Search">
+                    <button class="text-button btn btn-outline-dark" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/Projeto/img/primerib.jpeg" class="d-block w-100" alt="Contra Filé com batatas salteadas ao redor da carne">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Bife Ancho com batatas salteadas</h5>
+                    <p>Uma opção incrível para aquele date</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/Projeto/img/lasagna.jpeg" class="d-block w-100" alt="Lasanha à Bolonhesa">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Lasanha a Bolonhesa</h5>
+                    <p>Fácil de fazer para aquele almoço de sábado em família!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/Projeto/img/caesarsalad.jpeg" class="d-block w-100" alt="Salada Cesar">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Salada César</h5>
+                    <p>O preferido para não sair da dieta!</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="card mx-5 my-5">
+        <img src="/Projeto/img/carbonara.jpeg" class="card-img-top" alt="Spaghetti Carbonara">
+        <div class="card-body text-center">
+            <div class="container">
+                <h2 class="mt-4">Spaghetti Carbonara: Um Clássico Italiano</h2>
+                <p>O Spaghetti Carbonara é um prato clássico da culinária italiana, famoso por sua simplicidade e sabor rico. Este prato combina pasta al dente com um molho cremoso de ovos, queijo pecorino e pancetta.</p>
+                <h2>Ingredientes</h2>
+                <p>400 g de spaghetti</p>
+                <p>150 g de pancetta ou bacon cortado em cubos</p>
+                <p>2 dentes de alho</p>
+                <p>4 ovos grandes</p>
+                <p>100 g de queijo Pecorino Romano ralado</p>
+                <p>Sal e pimenta-do-reino moída na hora</p>
+                <h2>Modo de Preparo</h2>
+                <p>Cozinhe o spaghetti em uma panela grande com água salgada até ficar al dente.</p>
+                <p>Enquanto a massa cozinha, frite a pancetta em sua própria gordura até ficar crocante. Adicione alho picado nos últimos minutos para saborizar.</p>
+                <p>Em uma tigela, bata os ovos com o queijo Pecorino Romano e tempere com pimenta-do-reino.</p>
+                <p>Escorra o spaghetti e reserve um pouco da água do cozimento. Misture o spaghetti ainda quente com a pancetta e o alho na panela.</p>
+                <p>Desligue o fogo e adicione a mistura de ovos e queijo, mexendo rapidamente para não cozinhar os ovos diretamente e formar um molho cremoso.</p>
+                <p>Se necessário, adicione um pouco da água reservada para atingir a consistência desejada do molho.</p>
+                <h2>Dicas para Incrementar</h2>
+                <p>Para um toque gourmet, experimente adicionar trufas negras raladas por cima antes de servir.</p>
+                <p>Para dar uma nota verde ao prato, adicione um punhado de ervilhas cozidas junto com a pancetta.</p>
+                <p>Um fio de azeite de oliva extra virgem no final também pode adicionar uma camada extra de sabor.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center px-4 py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-muted">Receitas by Gab - Projeto Front-End</p>
+        <h4 class="nav-item"><a href="#" id="assinatura" class="nav-link px-2 text-muted">Anderson Gabriel</a></h4>
+        <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">agvms@cesar.school</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Ciência da Computação</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Turma A</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
