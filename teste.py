@@ -1,1 +1,0 @@
-print("Tmj fiote do pai")
