@@ -1,1 +1,1 @@
-print("Tmj fiote")
+print("Tmj fiote do pai")
