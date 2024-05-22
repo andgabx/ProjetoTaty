@@ -1,1 +1,0 @@
-Oi, professora! Queria saber, posteriormente, o que a senhora recomendaria eu mudar ou implementar o site, quero muito seguir na carreira de Front-End e estou nesse momento estudando Javascript para, então, seguir com React. Agradeço qualquer conselho!
