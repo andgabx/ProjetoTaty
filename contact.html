@@ -133,81 +133,67 @@
 
     </div>
 
-    <div class="containter-fluid m-3 p-3">
-        <form>
+    <div class="container-fluid m-3 p-3">
+        <form class="needs-validation" novalidate>
             <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="inputEmail4">Email</label>
-                <input type="email" class="verificador form-control" id="inputEmail4" placeholder="Email">
-              </div>
-              <div class="form-group col-md-6">
-                <label for="inputPassword4">Senha</label>
-                <input type="password" class="verificador form-control" id="inputPassword4" placeholder="Senha">
-              </div>
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+                    <div class="invalid-feedback">Por favor, insira um email válido.</div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Senha</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Senha" required>
+                    <div class="invalid-feedback">Por favor, insira uma senha.</div>
+                </div>
             </div>
             <div class="form-group">
-              <label for="inputAddress">Endereço</label>
-              <input type="text" class="verificador form-control" id="inputAddress" placeholder="Rua Num sei Que">
+                <label for="inputAddress">Endereço</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Rua Num sei Que" required>
+                <div class="invalid-feedback">Por favor, insira um endereço.</div>
             </div>
             <div class="form-group">
-              <label for="inputAddress2">Endereço 2 (Opcional)</label>
-              <input type="text" class="verificador form-control" id="inputAddress2" placeholder="Número de apartamento">
+                <label for="inputAddress2">Endereço 2 (Opcional)</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Número de apartamento">
             </div>
             <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="inputCity">Cidade</label>
-                <input type="text" class="verificador form-control" id="inputCity">
-              </div>
-              <div class="form-group col-md-4">
-                <label for="inputState">Estado</label>
-                <select id="inputState" class="form-control">
-                    <option>Acre (AC)</option>
-                    <option>Alagoas (AL)</option>
-                    <option>Amapá (AP)</option>
-                    <option>Amazonas (AM)</option>
-                    <option>Bahia (BA)</option>
-                    <option>Ceará (CE)</option>
-                    <option>Distrito Federal (DF)</option>
-                    <option>Espírito Santo (ES)</option>
-                    <option>Goiás (GO)</option>
-                    <option>Maranhão (MA)</option>
-                    <option>Mato Grosso (MT)</option>
-                    <option>Mato Grosso do Sul (MS)</option>
-                    <option>Minas Gerais (MG)</option>
-                    <option>Pará (PA)</option>
-                    <option>Paraíba (PB)</option>
-                    <option>Paraná (PR)</option>
-                    <option>Pernambuco (PE)</option>
-                    <option>Piauí (PI)</option>
-                    <option>Rio de Janeiro (RJ)</option>
-                    <option>Rio Grande do Norte (RN)</option>
-                    <option>Rio Grande do Sul (RS)</option>
-                    <option>Rondônia (RO)</option>
-                    <option>Roraima (RR)</option>
-                    <option>Santa Catarina (SC)</option>
-                    <option>São Paulo (SP)</option>
-                    <option>Sergipe (SE)</option>
-                    <option>Tocantins (TO)</option>
-                </select>
-              </div>
-              <div class="form-group col-md-2">
-                <label for="inputZip">CEP</label>
-                <input type="text" class="verificador form-control" id="inputZip">
-              </div>
+                <div class="form-group col-md-6">
+                    <label for="inputCity">Cidade</label>
+                    <input type="text" class="form-control" id="inputCity" required>
+                    <div class="invalid-feedback">Por favor, insira uma cidade.</div>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputState">Estado</label>
+                    <select id="inputState" class="form-control" required>
+                        <option value="">Escolha...</option>
+                        <!-- other options -->
+                    </select>
+                    <div class="invalid-feedback">Por favor, selecione um estado.</div>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputZip">CEP</label>
+                    <input type="text" class="form-control" id="inputZip" required>
+                    <div class="invalid-feedback">Por favor, insira um CEP.</div>
+                </div>
             </div>
             <div class="form-group py-3 pe-3">
-              <div class="form-check"> Concordo com a política de privacidade do site
-                <input class="form-check-input" type="checkbox" id="gridCheck">
-              </div>
+                <div class="form-check"> Concordo com a política de privacidade do site
+                    <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                    <label class="form-check-label" for="gridCheck">
+                        Concordo com a política de privacidade do site
+                    </label>
+                    <div class="invalid-feedback">Você deve concordar antes de enviar.</div>
+                </div>
             </div>
-            <button type="submit enviar" class="btn text-button btn-primary">Enviar</button>
-          </form>
-    </div>
+            <button type="submit" class="btn text-button btn-primary enviar">Enviar</button>
+        </form>
+    </div>              
 
     <footer class="d-flex flex-wrap justify-content-between align-items-center px-4 py-3 my-4 border-top">
         <p class="col-md-4 mb-0 text-muted">Receitas by Gab - Projeto Front-End</p>
         <h4 class="nav-item"><a href="#" id="assinatura" class="nav-link px-2 text-muted">Anderson Gabriel</a></h4>
         <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="../contact.html" class="nav-link px-2 text-muted">Contato</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">agvms@cesar.school</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Ciência da Computação</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Turma A</a></li>
