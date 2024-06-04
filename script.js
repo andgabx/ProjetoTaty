@@ -3,10 +3,9 @@ function googleTranslateElementInit() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-
   var forms = document.getElementsByClassName('needs-validation');
 
-  var validation = Array.prototype.filter.call(forms, function(form) { // Foi uma forma mais simples de fazer a validação do que for each, por eu estar usando Bootstrap
+  Array.prototype.filter.call(forms, function(form) {
       form.addEventListener('submit', function(event) {
           if (form.checkValidity() === false) {
               event.preventDefault();
@@ -19,5 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
       }, false);
   });
 });
+
 
 
